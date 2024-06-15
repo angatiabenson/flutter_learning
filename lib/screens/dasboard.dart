@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
 
@@ -11,19 +13,19 @@ class Dashboard extends StatelessWidget {
         title: Text("Dashboard".toUpperCase()),
         backgroundColor: Colors.blueGrey,
       ),
-      body: const Center(
-        child: Image(
-          image: NetworkImage("https://www.dairyfreestate.com/wp-content/uploads/2019/12/2019-word-growth-1024x587-1024x585.png"),
-          width: 200.0,
-          height: 200.0,
-          fit: BoxFit.contain,
-        )
+      body: Center(
+        child: IconButton(
+          onPressed: () {},
+          icon: const Icon(FontAwesomeIcons.home),
+          iconSize: 50.0,
+          color: Colors.red,
+          splashColor: Colors.grey,
+        ),
       ),
     );
   }
 }
 
-
-int getRandomNumber(){
+int getRandomNumber() {
   return Random().nextInt(100);
 }
