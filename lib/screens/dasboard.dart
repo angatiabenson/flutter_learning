@@ -13,13 +13,13 @@ class Dashboard extends StatelessWidget {
         title: Text("Dashboard".toUpperCase()),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {},
-          icon: const Icon(FontAwesomeIcons.home),
-          iconSize: 50.0,
-          color: Colors.red,
-          splashColor: Colors.grey,
+      body: Container(
+        color: Colors.blue,
+        padding: const EdgeInsets.all(12.0),
+        margin: const EdgeInsets.symmetric(vertical: 12.0),
+        child: const Text(
+          "Boring",
+          style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
       ),
     );
